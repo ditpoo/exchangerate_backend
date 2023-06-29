@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "7e06a765-fea2-4e67-9a40-028fa53d646c",
+		"name": "firebond",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28115939"
+	},
+	"item": [
+		{
+			"name": "Returns the current exchange rate for crypto fiat pair.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/rates/bitcoin/usd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"rates",
+						"bitcoin",
+						"usd"
+					]
+				},
+				"description": "Returns the current exchange rate between the specified cryptocurrency and fiat currency."
+			},
+			"response": []
+		},
+		{
+			"name": "Get current exchange rates for a crypto token in all fiat paris",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/rates/bitcoin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"rates",
+						"bitcoin"
+					]
+				},
+				"description": "Returns the current exchange rates between the specified cryptocurrency and all supported fiat currencies"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all exchage rates for all crypto fiat pairs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/rates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"rates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get historical exchange rates for crypo fiat pair",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000//rates/history/bitcoin/usd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"",
+						"rates",
+						"history",
+						"bitcoin",
+						"usd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get balance for an eth address",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/balance/0x71C7656EC7ab88b098defB751B7401B5f6d8976F",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"balance",
+						"0x71C7656EC7ab88b098defB751B7401B5f6d8976F"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
