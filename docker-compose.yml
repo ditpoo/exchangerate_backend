@@ -1,0 +1,18 @@
+version: "3"
+services:
+  backend:
+    environment:
+      INFURA_PROJECT_ID: ${INFURA_PROJECT_ID}
+      MONGO_URL: ${MONGO_URL}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+      - "5000:5000"
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
